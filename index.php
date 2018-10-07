@@ -54,6 +54,7 @@
 					<div class="collapsible-body">
 						Categories, Categories, Categories, Categories, Categories
 					</div>
+
 				</li>
 <!--				<p class="row remove_margin"><small class="col m12">Categories<span class="right">(12)</span></small></p>
 				<li>
