@@ -1,0 +1,215 @@
+
+@import "materialize.scss";
+
+
+$navbar_search_input_height: 28px !default;
+
+$navbar_search_width : 35rem;
+
+$menu_li_a_font_size : 12px;
+$menu_li_a_hight : $menu_li_a_font_size * 2.5;
+
+.remove_margin{
+    margin: 0 !important;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    color: black;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.page_container, footer {
+    padding-left: $sidenav-width;
+}
+
+@media only screen and (max-width : 992px) {
+    .page_container, footer {
+        padding-left: 0;
+    }
+}
+
+//navbar
+#my_navbar{
+    
+    .header_button, .header_button_special{
+        @extend .waves-effect;
+        @extend .waves-light;
+        @extend .btn-small;
+        
+    }
+    .header_button{
+        @extend .purple;
+        @extend .darken-4;
+    }
+    .header_button_special{
+        @extend .amber;
+        @extend .darken-4;
+    }
+    
+    .brand-logo{
+        img{
+            padding: 1px;
+            height: $navbar-height;
+        }
+    }
+    
+    #navbar_search{
+        width: $navbar_search_width;
+        position:absolute;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        li{
+            width: 100%;
+            .input-field{
+                input{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    width: 100%;
+                    border-radius: 3px;
+                    font-size: 1rem;
+                    height: $navbar_search_input_height;
+                    margin-top: ($navbar-height - $navbar_search_input_height)/2;
+                }
+            }
+        }
+    }
+    .navbar_second_menu_container{
+        height: $navbar_search_input_height/3;
+        width: 100%;
+        text-align: center;
+        .navbar_second_menu{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            a{
+                font-size: $menu_li_a_font_size;
+                height: $menu_li_a_font_size;
+            }
+        }
+    }
+}
+
+#left_menu{
+    margin-top: $navbar_search_input_height/3 + $navbar-height !important;
+    border: none;
+    @extend .hide-on-med-and-down;
+    background-color: $primary-color;
+    small,span{
+        color: white;
+    }
+    .collapsible{
+        border: none;
+        .collapsible-header, .collapsible-body{
+            padding: 0.5rem;
+        }
+        .collapsible-body{
+            background-color: white;
+        }
+    }
+    a.dropdown-trigger{
+        margin-bottom: 0.5rem;
+        @extend .btn-block;
+        @extend .btn-small;
+        @extend .purple;
+        @extend .darken-4;
+        
+        bottom: -$button-floating-large-size / 2;
+    }
+    .dropdown-content{
+        width: 100%;
+        li{
+            height: $menu_li_a_hight;
+            min-height: $menu_li_a_hight;
+            a{
+                font-size: $menu_li_a_font_size;
+                height: $menu_li_a_hight;
+                line-height: $menu_li_a_hight;
+            }
+        }
+    }
+}
+.price_buton{
+    @extend .btn;
+    @extend .blue;
+    @extend .lighten-1;
+}
+
+.timeline_header_container{
+    @extend .row;
+    @extend .remove_margin;
+    @extend .z-depth-1;
+    background-color: $primary-color;
+    color: white;
+    min-height: $navbar-height;
+    border-top-left-radius: 3px; 
+    border-top-right-radius: 3px; 
+}
+
+.page_container{
+    margin-top: $navbar_search_input_height/2;
+    .home_page_header{
+        h2,h3,h4{
+            @extend .remove_margin;
+        }
+        .price_buton{
+            @extend .btn-small;
+        }
+        .header_post_buton{
+            @extend .btn-small;
+            @extend .btn-block;
+            @extend .amber;
+            @extend .darken-4;
+            @media #{$medium-and-down} {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .home_page_content{
+        .timeline{
+            .timeline_header{
+                @extend .timeline_header_container;
+                .timeline_header_logo_container{
+                    img{
+                        height: $navbar-height - 2;
+                        margin-top: 1px;
+                        margin-bot: 1px;
+                    }
+                }
+            }
+            .timeline_content{
+                margin-top: 0.3rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                .row{
+                    .col{
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+                img{
+                    max-height: 20rem;
+                }
+                .text-info{
+                    color: $link-color;
+                }
+            }
+        }
+        .def_counter{
+            @extend .timeline_header_container;
+        }
+    }
+}
