@@ -13,8 +13,11 @@ var instance_second_menu = M.Collapsible.init(second_menu, {
 $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.dropdown-trigger').dropdown({ 
-            coverTrigger: false,
-            constrainWidth: false
-           });
+        coverTrigger: false,
+        constrainWidth: false
+    });
+    $('.collapsible').collapsible({
+        accordion: false,
+    });
 });
 

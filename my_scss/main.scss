@@ -40,6 +40,9 @@ main {
     }
 }
 
+.sidenav-overlay{
+    z-index: 996;
+}
 //navbar
 #my_navbar{
     
@@ -159,6 +162,24 @@ main {
     border-top-right-radius: 3px; 
 }
 
+.container{
+    margin-top: $navbar_search_input_height/2;
+}
+
+$mobile_top : $navbar-height + 10 + $navbar_search_input_height/2;
+
+#nav-mobile{
+    top: $mobile_top;
+    height: calc(100% - 145px );
+    width: 22rem;
+    .collapsible{
+        color: black;
+        .collapsible-body{
+            padding-left: 3rem;
+            line-height: initial;
+        }
+    }
+}
 .page_container{
     margin-top: $navbar_search_input_height/2;
     .home_page_header{
