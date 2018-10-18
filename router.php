@@ -60,7 +60,7 @@
 		
 		default:
 			$page = 'home';
-			$page_title = 'rental car or share your vehicle';
+			$page_title = 'This is the best test server';
 			$footer_js[] = '<script type="text/javascript" src="/pub/js/' . $page . '.js"></script>';
 
 			break;

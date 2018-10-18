@@ -1,6 +1,6 @@
-<html>
+<html lang="en">
     <head>
-		
+		<title><?=$page_title . ' | '.DOMAIN_NAME;?></title>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		
 		<link type="text/css" rel="stylesheet" href="/pub/css/main.css"  media="screen,projection"/>
@@ -27,8 +27,6 @@
 					$page_container = 'container';
 				}
 			?>
-        
-        
 			<div class="row <?= $page_container ;?>">
 				<div class="col m12 page_content">
 
