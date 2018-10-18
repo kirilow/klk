@@ -40,11 +40,25 @@
 
 	switch ($p) {
 
-		case 'pp':
-			$page = 'pp';
+		case 'test-table':
+			$page = 'test-table';
+			$page_title = 'test-table';
+			$footer_js[] = '<script type="text/javascript" src="/pub/js/' . $page . '.js"></script>';
 			break;
+		
+		case 'login_page':
+			$page = 'login_page';
+			break;
+		
+		case 'facebook_login':
+			$page = 'facebook_login';
+			break;
+		
+		case 'fb-callback':
+			$page = 'fb-callback';
+			break;
+		
 		default:
-
 			$page = 'home';
 			$page_title = 'rental car or share your vehicle';
 			$footer_js[] = '<script type="text/javascript" src="/pub/js/' . $page . '.js"></script>';

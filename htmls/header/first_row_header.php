@@ -4,7 +4,7 @@
 	</a>
 
 	<ul class="right hide-on-med-and-down">
-		<li><a class="header_button">Login</a></li>
+		<li><a href="/login_page"class="header_button">Login</a></li>
 		<li><a class="header_button remove_margin">Sign-up</a></li>
 		<li><a class="header_button_special">Start selling</a></li>
 	</ul>

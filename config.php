@@ -63,3 +63,12 @@ function ourautoload($classname) {
 	}
 }
 spl_autoload_register('ourautoload');
+
+define('VENDOR_PATH', BASE_PATH_ABS . 'vendor'.SEPARATOR);
+
+require_once(VENDOR_PATH . "autoload.php");
+
+function add_drilldown_icon(){
+	return '<input type="checkbox" class="drilldown" id="drilldown-boxy" />
+			<label for="drilldown-boxy" class="drilldown-boxy"></label>';
+}

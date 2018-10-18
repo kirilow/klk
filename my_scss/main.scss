@@ -119,9 +119,12 @@ main {
         .collapsible-header, .collapsible-body{
             padding: 0.5rem;
         }
-        .collapsible-body{
-            background-color: white;
-        }
+    }
+    .collapsible-body{
+        background-color: $primary-color;
+        color: white;
+        padding-left: 3rem;
+        line-height: initial;
     }
     a.dropdown-trigger{
         margin-bottom: 0.5rem;
@@ -233,4 +236,69 @@ $mobile_top : $navbar-height + 10 + $navbar_search_input_height/2;
             @extend .timeline_header_container;
         }
     }
+}
+
+.table_container{
+    .drildown{
+        &:before {
+            font-family: 'Material Icons';
+            content: 'arrow_back';
+            font-weight: bolder;
+            font-size:  $button-large-icon-font-size;
+            cursor: pointer;
+            @extend .red-text;
+            @extend .material-icons;
+            width:20px; height:20px;
+            background-color:#aaa;
+            border:solid 2px #000; border-radius:20px;
+            margin:0 auto;
+  
+            /*animation listner*/
+            transition:1s;
+        }
+        &:checked {
+            color: blue;
+        }
+    }
+    @media #{$medium-and-up} {
+        table{
+            tr{
+                td{
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+}
+.drilldown-boxy{
+    &:before {
+            font-family: 'Material Icons';
+            content: 'arrow_back';
+            font-weight: bolder;
+            font-size:  $button-large-icon-font-size;
+            cursor: pointer;
+            /*@extend .red-text;*/
+            @extend .material-icons;
+        }
+    color: red;
+    display:block;
+    width:$button-large-icon-font-size;
+    height:$button-large-icon-font-size;
+    line-height:$button-large-icon-font-size; text-align:center; font-size:$button-large-icon-font-size; font-weight:bold;
+    cursor:pointer;
+    border:solid 0.1rem;
+    border-color: red;
+    border-radius:30%;
+    transition:0.3s;
+}
+
+.drilldown{
+    position:absolute; top:-9999px;
+}
+
+.drilldown:checked + .drilldown-boxy{
+    border-color: green;
+    color: green;
+    transform:rotate(-90deg);
 }

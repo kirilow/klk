@@ -21,3 +21,7 @@ $(document).ready(function () {
     });
 });
 
+$(document).on('click','.drilldown',function(){
+    $(this).parent().toggleClass('active-drilldown');
+});
+
