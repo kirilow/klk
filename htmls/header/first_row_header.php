@@ -1,4 +1,4 @@
-<div class="nav-wrapper ">
+<div class="nav-wrapper">
 	<a id="logo-container" href="/" class="brand-logo">
 		<img src="/pub/img/crane-market7.png" class="responsive-img" />
 	</a>
