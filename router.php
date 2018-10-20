@@ -47,7 +47,13 @@
 			break;
 		
 		case 'login_page':
+			$page_title = 'Login page';
 			$page = 'login_page';
+			break;
+		
+		case 'google_login':
+			$page_title = 'google login';
+			$page = 'google_login';
 			break;
 		
 		case 'facebook_login':

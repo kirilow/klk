@@ -1,6 +1,16 @@
 <html lang="en">
     <head>
 		<title><?=$page_title . ' | '.DOMAIN_NAME;?></title>
+		
+		<!-- Favicons-->
+		<link rel="apple-touch-icon" href="/pub/images/favicon/apple-touch-icon.png" sizes="180x180">
+		<link rel="icon" href="/pub/images/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+		<link rel="icon" href="/pub/images/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+		<link rel="manifest" href="/pub/images/favicon/manifest.json">
+		<link rel="mask-icon" href="/pub/images/favicon/safari-pinned-tab.svg" color="#563d7c">
+		<link rel="icon" href="/pub/images/favicon/favicon.ico">
+		<meta name="theme-color" content="#563d7c">
+		
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		
 		<link type="text/css" rel="stylesheet" href="/pub/css/main.css"  media="screen,projection"/>

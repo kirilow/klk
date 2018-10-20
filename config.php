@@ -7,7 +7,8 @@ if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
 }
 $REQUEST_PROTOCOL = $isSecure ? 'https' : 'http';
 
-
+define('GOOGLE_CLIENT_ID', '510448767094-9pl4n7hqetdb8vjsnkse505abh8r52is.apps.googleusercontent.com');
+define('GOOGLE_CLIENT_SICRET', 'rrYEXDAOUNtotRojMZaNe6je');
 
 define('DOMAIN_NAME', $_SERVER['SERVER_NAME']);
 define('SITE_NAME', 'testserver');
