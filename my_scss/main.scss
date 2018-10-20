@@ -148,6 +148,11 @@ main {
         }
     }
 }
+
+#left_menu_width{
+    margin-right: 1rem;
+}
+
 .price_buton{
     @extend .btn;
     @extend .blue;

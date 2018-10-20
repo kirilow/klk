@@ -33,6 +33,7 @@ $(document).on('click','#left_menu_width',function(){
     $('#left_menu').css({'width':'3rem'});
     $('.page_container').css({'padding-left':'3rem'});
     $('footer').css({'padding-left':'3rem'});
+    ths.css({'margin-right':'0'});
 });
 
 $(document).on('click','.left_menu_min',function(){
@@ -43,5 +44,6 @@ $(document).on('click','.left_menu_min',function(){
     $('#left_menu').css({'width':'15rem'});
     $('.page_container').css({'padding-left':'15rem'});
     $('footer').css({'padding-left':'15rem'});
+    ths.css({'margin-right':'1rem'});
 });
 
