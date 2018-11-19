@@ -40,10 +40,22 @@
 
 	switch ($p) {
 
+		case 'new_tabs':
+			$page = 'new_tabs';
+			$page_title = 'new tabs';
+			$footer_js[] = $page . '.js';
+			break;
+		
 		case 'test-table':
 			$page = 'test-table';
 			$page_title = 'test-table';
-			$footer_js[] = '<script type="text/javascript" src="/pub/js/' . $page . '.js"></script>';
+			$footer_js[] = $page . '.js';
+			break;
+		
+		case 'listing':
+			$page = 'listing';
+			$page_title = 'listing';
+			$footer_js[] = $page . '.js';
 			break;
 		
 		case 'login_page':
@@ -67,7 +79,7 @@
 		default:
 			$page = 'home';
 			$page_title = 'This is the best test server';
-			$footer_js[] = '<script type="text/javascript" src="/pub/js/' . $page . '.js"></script>';
+			$footer_js[] = $page . '.js';
 
 			break;
 	}

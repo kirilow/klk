@@ -4,6 +4,12 @@
 			<a href="/test-table">test table</a>
 		</li>
 		<li>
+			<a href="/new_tabs">new tabs</a>
+		</li>
+		<li>
+			<a href="/listing">Listing</a>
+		</li>
+		<li>
 			<a href="javascript:void(0)" class="dropdown-trigger" data-target='test2'>Test 2</a>
 		</li>
 		<li>

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
 		<title><?=$page_title . ' | '.DOMAIN_NAME;?></title>
@@ -11,11 +12,27 @@
 		<link rel="icon" href="/pub/images/favicon/favicon.ico">
 		<meta name="theme-color" content="#563d7c">
 		
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		
-		<link type="text/css" rel="stylesheet" href="/pub/css/main.css"  media="screen,projection"/>
-
+		
+		
+		<noscript id="deferred-styles" >
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<link type="text/css" rel="stylesheet" href="/pub/css/main.css"  media="screen"/>
+		</noscript >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script>
+			var loadDeferredStyles = function() {
+			  var addStylesNode = document.getElementById("deferred-styles");
+			  var replacement = document.createElement("div");
+			  replacement.innerHTML = addStylesNode.textContent;
+			  document.body.appendChild(replacement)
+			  addStylesNode.parentElement.removeChild(addStylesNode);
+			};
+			var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+				window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+			if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+			else window.addEventListener('load', loadDeferredStyles);
+		</script>
     </head>
 
     <body>

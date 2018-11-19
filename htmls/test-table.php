@@ -14,7 +14,7 @@
 			<tbody>
 				<tr>
 					<td>
-						<?=add_drilldown_icon()?>
+						
 					</td>
 					<td>Alvin</td>
 					<td>Eclair</td>

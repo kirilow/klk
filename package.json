@@ -1,0 +1,23 @@
+{
+  "name": "testserver.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirilow/klk.git"
+  },
+  "author": "Kiril Kirilov",
+  "homepage": "https://github.com/kirilow/klk#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-htmlmin": "^3.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^4.0.0"
+  },
+  "dependencies": {
+    "elasticsearch": "^15.2.0"
+  }
+}

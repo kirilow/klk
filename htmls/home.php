@@ -1,6 +1,8 @@
 
-					
-<div class="home_page_header">
+<?php //include 'klk_slider.php';?>
+<?php include 'home/carousel.php';?>
+
+<!--<div class="home_page_header">
 	<div class="row">
 		<div class="col m9">
 			<h4 class="center-align">What are you selling?</h4>
@@ -28,7 +30,7 @@
 			<a href="/" class="price_buton">Price</a>
 		</div>
 	</div>
-</div>
+</div>-->
 <div class="home_page_content">
 	<div class="row">
 		<div class="col m9 s12">
@@ -70,10 +72,15 @@
 			</div>
 
 		</div>
-		<div class="col m3 hide-on-med-and-down">
-			<div class="def_counter">
-				asdfasdf 444
+		<div id="right_home_container" class="col m3 hide-on-med-and-down">bm,bnm,
+<!--			<div class="def_counter">
+				<select id="sources"></select>
 			</div>
+			<div class="row">
+				<div class="col s12">
+					<div id="news_container"></div>
+				</div>
+			</div>-->
 		</div>
 	</div>
 </div>

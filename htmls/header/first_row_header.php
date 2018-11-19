@@ -1,6 +1,6 @@
 <div class="nav-wrapper">
 	<a id="logo-container" href="/" class="brand-logo">
-		<img src="/pub/img/crane-market7.png" class="responsive-img" />
+		<img src="/pub/img/crane-market7.png" class="responsive-img" alt="site logo"/>
 	</a>
 
 	<ul class="right hide-on-med-and-down">

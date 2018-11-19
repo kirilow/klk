@@ -1,0 +1,13 @@
+#news_container{
+    .article{
+        a{
+            h2{
+                font-size: 18px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+        border-bottom: 1px solid black;
+    }
+}

@@ -1,0 +1,20 @@
+$breadcrumb_font_size : 12px;
+
+#breadcrumb{
+    .breadcrumb{
+        color: black;
+        font-size: $breadcrumb_font_size;
+        &:before{
+            color: black;
+            line-height: $breadcrumb_font_size * 2;
+            font-size: $breadcrumb_font_size;
+        }
+    }
+    .prev_next{
+        color: black;
+        height: $breadcrumb_font_size * 2;
+        line-height: $breadcrumb_font_size * 2 - 2;
+        font-size: $breadcrumb_font_size;
+    }
+}
+

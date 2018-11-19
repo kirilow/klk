@@ -1,0 +1,49 @@
+
+
+.klk_carousel-control{
+    .left, .right{
+        background-image:none;
+    }
+}
+
+.klk_carousel-multi{
+    .klk_carousel-inner{
+        > .item{
+            transition: 500ms ease-in-out left;
+
+            > .media-card{
+                background: #333;
+                border-right: 10px solid #fff;
+                display: table-cell;
+                width: 1%;
+
+                &:last-of-type{
+                    border-right: none;
+                }
+            }
+        }
+        .active{
+            display: table;
+            &.left{
+                left:-33%;
+            }
+            &.right{
+                left:33%;
+            }
+        }
+        .next{
+            left: 33%;
+        }
+        .prev{
+            left: -33%;
+        }
+        @media all and (transform-3d), (-webkit-transform-3d) {
+            > .item{
+                // use your favourite prefixer here
+                transition: 500ms ease-in-out all;
+                backface-visibility: visible;
+                transform: none!important;
+            }
+        }
+    }
+}
